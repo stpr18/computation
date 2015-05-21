@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>計算数論</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+    <script src="scripts/typings/jquery/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <h3>高速べき乗法でa^x mod nを計算</h3>
+    <form action="" id="fastexp">
+        a : <input name="input_a" type="number" min="0" max="255" value="3">
+        x : <input name="input_x" type="number" min="0" max="255" value="7">
+        n : <input name="input_n" type="number" min="0" value="1000">
+        <input type="button" value="計算" onclick="runfastexp();">
+        <br />
+        <textarea name="output10" cols="60" rows="20" readonly></textarea>
+    </form>
+</body>
+</html>
